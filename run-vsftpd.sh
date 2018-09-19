@@ -31,7 +31,7 @@ do
     user=(${line//:/ })
 
     if [ ! -f "/etc/vsftpd/user/conf/${user[0]}" ]; then
-        touch "/etc/vsftpd/user/conf/${user[0]}"
+        cp /etc/vsftpd/user_config "/etc/vsftpd/user/conf/${user[0]}"
     fi
 
     if [ ! -d "/home/vsftpd/${user[0]}" ]; then

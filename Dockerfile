@@ -18,6 +18,7 @@ ENV PASV_MIN_PORT 21100
 ENV PASV_MAX_PORT 21110
 ENV LOG_STDOUT **Boolean**
 
+COPY user_config /etc/vsftpd/
 COPY vsftpd.conf /etc/vsftpd/
 COPY vsftpd_virtual /etc/pam.d/
 COPY run-vsftpd.sh /usr/sbin/

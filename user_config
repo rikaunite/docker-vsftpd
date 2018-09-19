@@ -1,0 +1,5 @@
+# Uncomment this to disable any form of FTP write command.
+#write_enable=NO
+
+# Uncomment this to disable delete command.
+#cmds_denied=DELE,RMD
